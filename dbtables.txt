@@ -1,0 +1,20 @@
+create table signin(username varchar(20), password varchar(20));
+insert into signin values('admin','admin');
+
+create table student(name varchar(20), fathers_name varchar(20), age varchar(5), dob varchar(20), address varchar(30), phone varchar(15), 
+emailid varchar(25), class_x varchar(10), class_xii varchar(10), rollno varchar(15), course varchar(10), branch varchar(20));
+
+create table lecturer(name varchar(20), fathers_name varchar(20), age varchar(5), dob varchar(20), address varchar(30), phone varchar(15), email varchar(25), 
+class_x varchar(10), class_xii varchar(10), educational_qualification varchar(10), employee_id varchar(15), department varchar(20));
+
+create table fee(rollno varchar(20), name varchar(25), fathers_name varchar(25), 
+course varchar(10), branch varchar(20), semester varchar(10), fee_amount varchar(15));
+
+create table student_attendance(rollno varchar(20), Date varchar(30), first_half varchar(10), second_half varchar(10));
+
+create table lecturer_attendance(employee_id varchar(20), Date varchar(30), first_half varchar(10), second_half varchar(10));
+
+create table subject(rollno varchar(15), subject1 varchar(20), 
+subject2 varchar(20), subject3 varchar(20), subject4 varchar(20), subject5 varchar(20));
+
+create table marks(rollno varchar(15), marks1 varchar(20), marks2 varchar(20), marks3 varchar(20), marks4 varchar(20), marks5 varchar(20));
